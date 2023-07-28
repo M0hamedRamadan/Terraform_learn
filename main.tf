@@ -1,12 +1,12 @@
 provider "aws" {
   region     = var.region
-  access_key = var.access_key
-  secret_key = var.secret_key
+  # access_key = var.access_key
+  # secret_key = var.secret_key
 }
 resource "aws_vpc" "vpc-network" {
   cidr_block = var.cidr_block-vpc[0].cidr_block
   tags = {
-    name : var.cidr_block-vpc[0].name
+    Name : var.cidr_block-vpc[0].name
   }
 }
 
