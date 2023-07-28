@@ -1,13 +1,13 @@
 variable "region" {
   default = "us-west-2"
 }
-
+#you can by pass these variables (access and secret ) and login using aws configure command.
 variable "secret_key" {
-  default = "9+958KrvP5N9cuojZayQlAfbD37GOZDylztANouw"
+  default = "enter your secret access key"
 }
 
 variable "access_key" {
-  default = "AKIA2Q3AW6XARPCRW5NR"
+  default = "enter your access key"
 }
 
 variable "cidr_block-vpc" {
